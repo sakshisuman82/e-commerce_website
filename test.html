@@ -1,0 +1,59 @@
+<!-- Print-only Section -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Invoice</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body> 
+    <div class="invoice">
+      <!-- Restaurant Header -->
+      <div class="header">
+        <h1>Veggie Delight Cafe</h1>
+        <p>Invoice #: 2024-001</p>
+        <p>Date: March 15, 2024</p>
+      </div>
+
+      <p>GST (5%): ₹25</p>
+        <p class="final">Total: ₹522</p>
+      </div>
+
+
+      <!-- Order Items -->
+      <table class="items">
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Veggie Burger</td>
+          <td>₹249</td>
+        </tr>
+        <tr>
+          <td>Garden Salad</td>
+          <td>₹199</td>
+        </tr>
+        <tr>
+          <td>Masala Chai</td>
+          <td>₹49</td>
+        </tr>
+      </table>
+
+      <!-- Total Section -->
+      <div class="total">
+        <p>Subtotal: ₹497</p>->
+      <div class="print-only">
+        <p>Tip: __________</p>
+        <p>Total with Tip: __________</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>Thank you for dining with us!</p>
+        <button id="print-button" onclick="window.print()">Print Invoice</button>
+      </div>
+    </div>
+  </body>
+</html> 
