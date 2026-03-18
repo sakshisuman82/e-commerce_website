@@ -25,9 +25,34 @@ body{
                 align-items: center;
                 gap: 10px;
             }
+            .menu-icon{
+                display: none;
+                width: 30px;
+                height: 30px;
+                img {
+                    width: 100%;
+                }
+            }
             a {
                 text-decoration: none;
                 color: #555;
+            }
+        }
+        #menu-toggle {
+            display: none;
+        }
+        .hidden-nav-items{
+            display: flex;
+            flex-direction: column;
+            background-color: #333;
+            align-items: flex-end;
+            gap: 10px;
+            max-height: 0;
+            transition: max-height 0.5s ease;
+            a {
+                color: #fff;
+                text-decoration: none;
+                margin-right: 50px;
             }
         }
         .headercontent {
@@ -251,6 +276,7 @@ body{
     color: #eeeeee;
     font-size: 14px;
     padding: 60px 0 20px;
+    width: 100%;
 
     .footerInnerContainer {
         display: flex;
@@ -330,13 +356,13 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 1080px;
-    padding: 0px 25px;
+    padding: 0px 0px;
     margin: auto;
     .allProductsSectionLabel {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 100px 0px 50px;
+        margin: 100px 25px 50px;
         select {
             border: 1px solid #ff523b;
             padding: 5px;
@@ -366,7 +392,7 @@ body{
 }
 .product-details-container {
     margin-top: 80px;
-    max-width: 1080px;
+    max-width: 1100px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -453,7 +479,7 @@ body{
                 background-color: #222831;
             }
         }
-    }   
+    }
 }
 .cartSectionWrapper {
     margin: 80px auto;
@@ -599,6 +625,13 @@ body{
             .nav-items{
                 display: none !important;
             }
+            .menu-icon{
+                display: block !important;
+            }
+        }
+        #menu-toggle:checked ~ .hidden-nav-items{
+            max-height: 150px !important;
+            padding: 10px 0px !important;
         }
     }
 
