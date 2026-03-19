@@ -17,7 +17,7 @@ It is designed to practice front-end development concepts.
 - Simple and clean UI
 
 ## Project Status
-Currently under development
+✅ Completed — The project is fully developed and functional.
 
 ## Author
 Sakshi Suman
